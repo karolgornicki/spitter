@@ -10,6 +10,8 @@ Of course this is not how real Twitter application works. Using traditional data
 
 .. _link: http://www.slideshare.net/nkallen/q-con-3770885?from=ss_embed
 
+The project was inspired by "Spring in action" by C. Walls.
+
 Project features
 -------------
 
