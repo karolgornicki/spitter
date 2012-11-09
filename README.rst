@@ -67,3 +67,7 @@ In spring-servlet.xml, line 74 provide the path to your database (you can name i
 and in line 76 provide your password:
 
 ``<property name="password" value="yourPass" />``
+
+Project force using HTTPS thus adjust your server (in Tomcat normally it's 8443 port) or in spring-security.xml in lines 10, 11, and 12 get rid of attribute 
+
+``requires-channel="https"``
