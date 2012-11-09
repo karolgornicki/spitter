@@ -1,0 +1,176 @@
+body {
+	background-color: white;
+	color: black;
+	background-image: url('spring-logo.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+#mainTable {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+#header {
+	background-color: #397a2c;
+}
+
+.header {
+	height: 80px;
+	color: white;
+}
+
+.header h1 {
+	margin-left: 5px;
+	font-size: 40px;
+	font-family: Arial;
+	color: white; 	
+}
+
+a.head {
+	color: white;
+	text-decoration: none;
+}
+
+a.head.link {text-decoration: none;}
+a.head.visited {text-decoration: none;} /* visited link */
+a.head.hover {text-decoration: none;}   /* mouse over link */
+a.head.active {text-decoration: none;}  /* selected link */
+
+a.signout {
+	color: white;
+	text-decoration: underline;
+}
+
+a.signout.link {text-decoration: none;}
+a.signout.visited {text-decoration: none;} /* visited link */
+a.signout.hover {text-decoration: none;}   /* mouse over link */
+a.signout.active {text-decoration: none;}  /* selected link */
+
+a.userLink {
+	color: white;
+	text-decoration: underline, bold;
+}
+
+a.userLink.link {text-decoration: none;}
+a.userLink.visited {text-decoration: none;} /* visited link */
+a.userLink.hover {text-decoration: none;}   /* mouse over link */
+a.userLink.active {text-decoration: none;}  /* selected link */
+
+a.userButton {
+	color: white;
+	width: 60px;
+}
+
+#footer {
+	background-color: #397a2c;
+	color: white;
+}
+
+.standardTable {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+input,textarea {
+	padding: 2px;
+	margin: 2px 0 0 0;
+	background: #fff;
+	width: 220px;
+	font-size: 14px;
+	color: #555;
+	border: 1px #ddd solid;
+
+	/* -- CSS3 Transition - define what the transition will be applied to (i.e. the background) -- */
+	-webkit-transition: background 0.3s linear;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input:hover,textarea:hover {
+	background: #eee;
+}
+
+input.submit {
+	width: 100px;
+	color: #eee;
+	text-transform: uppercase;
+	margin-top: 2px;
+	background-color: #a0a0a0;
+	border: none;
+	/* -- CSS3 Transition - define which property to animate (i.e. the shadow)  -- */
+	-webkit-transition: -webkit-box-shadow 0.3s linear;
+	/* -- CSS3 - Rounded Corners -- */
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.submit:hover {
+	-webkit-box-shadow: 0px 0px 20px #555;
+	-moz-box-shadow: 0px 0px 20px #aaa;
+	box-shadow: 0px 0px 20px #555;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+a.menu:link,a.menu:visited {
+	display:block;
+	width:180px;
+	height: 40px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#98bf21;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+a.menu:hover,a.menu:active {
+	background-color:#7A991A;
+}
+
+
+#wideTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#xTable {
+	width: 600px;
+	border-collapse: collapse;
+}
+
+#spittleTable {
+	background-color: #e1e3b3;
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+
+.spittleMessage {
+	color: black;
+	font-family: Verdana;
+	font-size: 14px;
+	
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+}
+
+#alert {
+	color: red;
+	font-size: 12px;
+}

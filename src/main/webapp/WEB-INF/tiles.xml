@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<!-- Anonymous user -->
+	
+	<definition name="anonymousBaseTemplate" template="/WEB-INF/views/anonymous/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/views/anonymous/header.jsp"/>
+		<put-attribute name="body" value=""/>
+	</definition>
+	
+	<definition name="login" extends="anonymousBaseTemplate">
+		<put-attribute name="title" value="Spitter | Sing up"/>
+		<put-attribute name="body" value="/WEB-INF/views/anonymous/login.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="registerNewUser" extends="anonymousBaseTemplate">
+		<put-attribute name="title" value="Spitter | Registration form"/>
+		<put-attribute name="body" value="/WEB-INF/views/anonymous/registration.jsp"/>
+	</definition>
+	
+	<definition name="registrationCompleted" extends="anonymousBaseTemplate">
+		<put-attribute name="title" value="Spitter | Registration completed"/>
+		<put-attribute name="body" value="/WEB-INF/views/anonymous/thanks.jsp"/>
+	</definition>
+	
+	<!-- Anonymous user, re-send password -->
+	
+	<definition name="account/resendPassword" extends="anonymousBaseTemplate">
+		<put-attribute name="title" value="Spitter | Reminder"/>
+		<put-attribute name="body" value="/WEB-INF/views/account/resend_password.jsp"/>
+	</definition>
+	
+	<definition name="account/confirmation" extends="anonymousBaseTemplate">
+		<put-attribute name="title" value="Spitter"/>
+		<put-attribute name="body" value="/WEB-INF/views/account/confirmation.jsp"/>
+	</definition>
+	
+	<!-- Registered user -->
+	
+	<definition name="baseTemplate" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />		
+	</definition>
+
+	<definition name="home" extends="baseTemplate">
+		<put-attribute name="title" value="This is HOME!" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="spitters/view" extends="baseTemplate">
+		<put-attribute name="title" value="Profile View" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/spitters/profile.jsp" />
+	</definition>
+
+	<definition name="spitters/edit" extends="baseTemplate">
+		<put-attribute name="title" value="Edit your profile" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/spitters/edit.jsp" />
+	</definition>
+	
+	<definition name="spitters/followers" extends="baseTemplate">
+		<put-attribute name="title" value="Followers" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/spitters/followers.jsp" />
+	</definition>
+	
+	<definition name="spitters/following" extends="baseTemplate">
+		<put-attribute name="title" value="Following" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/spitters/following.jsp" />
+	</definition>
+	
+	<definition name="spitters/search" extends="baseTemplate">
+		<put-attribute name="title" value="Search results" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/spitters/search.jsp" />
+	</definition>
+	
+	<definition name="spitters/noProfile" extends="baseTemplate">
+		<put-attribute name="title" value="Spitter | User profile"/>
+		<put-attribute name="body" value="/WEB-INF/views/spitters/noProfile.jsp"/>
+	</definition>
+	
+	<!-- Admin stuff -->
+	
+	<definition name="adminBaseTemplate" template="/WEB-INF/views/admin/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/views/admin/header.jsp"/>
+		<put-attribute name="body" value=""/>
+	</definition>
+	
+	<definition name="admin/main" extends="adminBaseTemplate">
+		<put-attribute name="title" value="Spitter | Administrator panel" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/main.jsp" />
+	</definition>
+	
+	<definition name="admin/users" extends="adminBaseTemplate">
+		<put-attribute name="title" value="Spitter | Administrator panel | Users" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/users.jsp" />
+	</definition>
+	
+	<definition name="admin/search" extends="adminBaseTemplate">
+		<put-attribute name="title" value="Spitter | Administrator panel | Search for users" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/search.jsp" />
+	</definition>
+	
+</tiles-definitions>
