@@ -12,7 +12,7 @@ Of course this is not how real Twitter application works. Using traditional data
 
 The project was inspired by "Spring in action" by C. Walls.
 
-Project features
+Project Features
 -------------
 
 The application enables the user to register. Each registered user can navigate the application through the dashboard where he can post his/her messaged, search for other people, follow and unfollow as they please. The user has full control over his/her own posts and can delete them at any time as well as profile where provided information can be customized as per user's request (it includes prociding personal information and uploading avatar picture).
