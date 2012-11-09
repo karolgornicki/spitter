@@ -6,7 +6,11 @@ Introduction
 
 This project imitates the fundamental features of Twitter. It intends to dempnstrate the useage of Maven, Spring framework (in partucular MVC and Security) in conjunction with Hibernate used as an ORM tool to hit the datebase (PostgreSQL). Presentation layer is implemented using Tiles2. Application features also JavaScript.
 
-User features
+Of course this is not how real Twitter application works. Using traditional database for their purpose is completely unfeasible. Here is an interesting presetation about accessing big datasets in real-time: link_
+
+.. _link: http://www.slideshare.net/nkallen/q-con-3770885?from=ss_embed
+
+Project features
 -------------
 
 The application enables the user to register. Each registered user can navigate the application through the dashboard where he can post his/her messaged, search for other people, follow and unfollow as they please. The user has full control over his/her own posts and can delete them at any time as well as profile where provided information can be customized as per user's request (it includes prociding personal information and uploading avatar picture).
