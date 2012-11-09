@@ -25,7 +25,7 @@ List of features (user):
 
 #) Customize the profile (personal details, upload/remove picture)
 
-#) Post message which would be visible to himself/herself and people his/her following
+#) Post message which would be visible to the user and people who follow him/her
 
 #) Delete his/her messages
 
