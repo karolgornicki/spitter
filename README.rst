@@ -4,9 +4,9 @@ Spitter
 Introduction
 ------------
 
-This project imitates the fundamental features of Twitter. It intends to dempnstrate the useage of Maven, Spring framework (in partucular MVC and Security) in conjunction with Hibernate used as an ORM tool to hit the datebase (PostgreSQL). Presentation layer is implemented using Tiles2. Application features also JavaScript.
+This project imitates the fundamental features of Twitter. It is based on 3 layer architecture. Presentation layer is carried out in Spring MVC, Tiles2, and JavaScript. Service and Persistence layers use core Spring functionality leveraged by Hibernate. The entire project is built in Maven and current connection settings use PostgreSQL database.
 
-Of course this is not how real Twitter application works. Using traditional database for their purpose is completely unfeasible. Here is an interesting presetation about accessing big datasets in real-time: link_
+Of course this is not how real Twitter application works. Using traditional database for their purpose is completely unfeasible. Here is an interesting presentation about accessing big datasets in real-time: link_
 
 .. _link: http://www.slideshare.net/nkallen/q-con-3770885?from=ss_embed
 
@@ -15,7 +15,7 @@ The project was inspired by "Spring in action" by C. Walls.
 Project Features
 -------------
 
-The application enables the user to register. Each registered user can navigate the application through the dashboard where he can post his/her messaged, search for other people, follow and unfollow as they please. The user has full control over his/her own posts and can delete them at any time as well as profile where provided information can be customized as per user's request (it includes prociding personal information and uploading avatar picture).
+The application enables to register a new account or sign in using existing one. Each registered user can navigate the application through the dashboard where he can post a new message (visible to all who follow him), search for other people, follow and unfollow other users. The user has full control over his own posts and can delete them at any time, as well as customize his own profile (including providing personal information and uploading avatar).
 
 List of features (user):
 
